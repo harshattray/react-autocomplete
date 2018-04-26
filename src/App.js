@@ -2,7 +2,7 @@
  * @Author: harsha
  * @Date:   2018-04-25T20:06:46+05:30
  * @Last modified by:   harsha
- * @Last modified time: 2018-04-26T00:04:04+05:30
+ * @Last modified time: 2018-04-26T16:23:06+05:30
  */
 
 import React, { Component } from 'react';
@@ -19,6 +19,8 @@ class App extends Component {
         </header>
         <div className="App-intro">
           <SearchBarComponent data={fruits} />
+          <p className="App-sub">Search for fruits</p>
+          <p className="App-sub">Eg: Apple, cantaloupe, grapefruit ..etc </p>
         </div>
       </div>
     );
