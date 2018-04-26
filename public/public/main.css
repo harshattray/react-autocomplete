@@ -7,13 +7,13 @@ body {
  * @Author: harsha
  * @Date:   2018-04-25T20:06:46+05:30
  * @Last modified by:   harsha
- * @Last modified time: 2018-04-25T21:49:39+05:30
+ * @Last modified time: 2018-04-26T12:17:11+05:30
  */
 
 
 
 .App {
-  text-align: center;
+
 }
 
 .App-logo {
@@ -29,11 +29,14 @@ body {
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 50px;
+  margin-top: 50px;
+  font-weight: 300;
 }
 
 .App-intro {
   font-size: large;
+  padding: 20px;
 }
 
 @keyframes App-logo-spin {
@@ -42,7 +45,7 @@ body {
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .react-autosuggest__container {
@@ -50,8 +53,9 @@ body {
 }
 
 .react-autosuggest__input {
-  width: 240px;
+  width: calc(100% - 40px);
   height: 30px;
+  margin-top: 20px;
   padding: 10px 20px;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -76,8 +80,8 @@ body {
 .react-autosuggest__suggestions-container--open {
   display: block;
   position: absolute;
-  top: 51px;
-  width: 280px;
+  top: 73px;
+  width: 100%;
   border: 1px solid #aaa;
   background-color: #fff;
   font-family: Helvetica, sans-serif;

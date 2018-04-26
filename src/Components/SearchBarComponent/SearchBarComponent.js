@@ -2,7 +2,7 @@
 * @Author: harsha
 * @Date:   2018-04-25T20:56:32+05:30
  * @Last modified by:   harsha
- * @Last modified time: 2018-04-26T00:05:06+05:30
+ * @Last modified time: 2018-04-26T12:48:38+05:30
 */
 import React from 'react'
 import Autosuggest from 'react-autosuggest'
@@ -27,18 +27,14 @@ class SearchBarComponent extends React.Component {
   getSuggestions = (value) => {
     const inputValue = value.trim().toLowerCase();
     const inputLength = inputValue.length;
-    const renderDummies =  this.props.data;
-    console.log(renderDummies);
     const renderValues = this.props.data.fruits;
     const searcher = new FuzzySearch(renderValues, ['name'], {
       caseSensitive: false
     });
     
     const result = searcher.search(inputValue);
-    console.log(result);
     
     return inputLength === 0 ? [] : result.map(value =>{
-      console.log(value.name.toLowerCase());
       return value.name.toLowerCase()
     }
   );
